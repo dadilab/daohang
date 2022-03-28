@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots” content=" nofollow” />
+    <link rel="preload" href="https://at.alicdn.com/t/font_3173388_hbtxiwstpsg.woff2" as="font" type="font/woff2"
+        crossorigin="anonymous">
+    <title>大地导航</title>
+    <meta name="keywords"
+        content="大地导航,PPT模板,PPT素材,PPT资源,PPT下载,PPT合集,简约PPT,商务PPT,欧美PPT,PPT资源导航,PPT设计,PPT教程,PPT美化,设计师导航">
+    <meta name="description" content="推荐相关网站，为你的PPT设计提供创意灵感、配色方案、免费图片、优质图标、工具插件等">
+    <script src="https://hao.xudadi.com/mobile/js/jquery-3.1.0.js?1.0"></script>
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <style>
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            font-family: "微软雅黑";
+        }
+
+        body {
+            width: 100%;
+            background: #fff;
+        }
+
+        @font-face {
+            font-family: 'iconfont';
+            src: url('https://at.alicdn.com/t/font_3173388_hbtxiwstpsg.woff2?t=1644407665491') format('woff2'),
+                url('https://at.alicdn.com/t/font_3173388_hbtxiwstpsg.woff?t=1644407665491') format('woff'),
+                url('https://at.alicdn.com/t/font_3173388_hbtxiwstpsg.ttf?t=1644407665491') format('truetype');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+        }
+
+        @media screen and (min-width: 800px) {
+            .content {
+                width: 800px;
+                margin: 0px auto;
+            }
+        }
+
+
+        h1 {
+            color: #000;
+            text-align: center;
+        }
+
+        .des {
+            color: #999;
+            text-align: center;
+            padding: 0px 15px;
+
+        }
+
+        .top {
+            cursor: pointer;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .video {
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 99999;
+            /* display: none; */
+        }
+
+        .view>iframe {
+            width: 100%;
+        }
+
+        .card {
+            margin: 20px 5px;
+        }
+
+        .title {
+            border-bottom: 2px solid #e9e9e9;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .title-box {
+            /* background: #f08770; */
+            font-size: 20px;
+            color: #333;
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        ul.url {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul.url>li {
+            display: inline-table;
+            padding: 10px;
+            width: 160px;
+            text-align: left;
+            text-indent: 0em;
+            margin: 10px 5px;
+            border-radius: 5px;
+            /* height: 80px; */
+            cursor: pointer;
+            position: relative;
+        }
+
+        @media screen and (max-width: 480px) {
+            .content {
+                width: 100%;
+                margin: 0px auto;
+            }
+
+            ul.url>li {
+                width: calc((100% - 70px)/2) !important;
+            }
+        }
+
+        .tips {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 16px;
+            height: 16px;
+            opacity: 0.75;
+        }
+
+        .tips>img {
+            width: 16px;
+            height: 16px;
+        }
+
+        .url-title {
+            font-weight: bold;
+            color: #fefefe;
+            font-size: 16px;
+        }
+
+        .url-des {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 14px;
+            height: 58px;
+        }
+
+        .url-view {
+            text-align: right;
+            font-size: 12px;
+            color: #efefef;
+        }
+
+        .url-view .iconfont {
+            font-size: 14px;
+            margin-right: 2px;
+        }
+
+        .want-add {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .want-add>a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            padding: 5px 10px;
+            background: #51c7db;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /**/
+        [data-url] {
+            cursor: pointer;
+        }
+
+        .line {
+            color: #9a9a9a;
+            margin: 20px 0px;
+            text-align: center;
+            border-bottom: solid 1px #eaeaea;
+            padding: 20px 0px;
+            font-size: 12px;
+        }
+
+        .daohang {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .daohang img {
+            width: 100px;
+            height: 100px;
+            opacity: 0.75;
+        }
+
+        .daohang .name-box {
+            margin-top: 15px;
+        }
+
+        .daohang .name {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        .thclass {
+            padding: 10px;
+        }
+
+        table td {
+            width: 80px;
+            height: 10px;
+            text-align: center;
+        }
+
+        #d1 table {
+            border-collapse: collapse;
+        }
+
+        #d1 table td {
+            border: 10px solid white;
+        }
+
+        /* GoTop Start */
+        .gotop {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            width: 34px;
+            height: 54px;
+        }
+
+        /* GoTop End */
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <h1>教师必备工具箱</h1>
+        <div class="des">教师日常办公必备软件、资源平台，为您排雷，放心使用！</div>
+
+        <div align="center" class="top" id="d1">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><a href="#gkkc">公开课程</a></td>
+                        <td><a href="#xsky">学术科研</a></td>
+                        <td><a href="#jxgl">教学管理</a></td>
+                        <td><a href="#yswg">演示文稿</a></td>
+                        <td><a href="#txcl">图像处理</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#ypcl">音频处理</a></td>
+                        <td><a href="#spcl">视频处理</a></td>
+                        <td><a href="#lprj">录屏软件</a></td>
+                        <td><a href="#dhzz">动画制作</a></td>
+                        <td><a href="#aqrj">安全软件</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#dzts">电子图书</a></td>
+                        <td><a href="#swcz">思维创作</a></td>
+                        <td><a href="#sygj">实用工具</a></td>
+                        <td><a href="#zjgj">装机工具</a></td>
+                        <td><a href="#grsc">个人收藏</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="gkkc">公开课程</div>
+            </div>
+            <ul class="url">
+
+                <li style="background: #e16969;" data-url="https://ykt.eduyun.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">中小学网络云</div>
+                    <div class="url-des">全科目全年段优质课程 </div>
+                </li>
+
+                <li style="background: #e16969;" data-url="https://xue.ykt.eduyun.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">中小学网络云[New]</div>
+                    <div class="url-des">全科目全年段优质课程 </div>
+                </li>
+                
+                <li style="background: #b81e1e;" data-url="https://1s1k.eduyun.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">一师一优课</div>
+                    <div class="url-des">全国各地名师优课</div>
+                </li>
+
+                <li style="background: #e895d2;" data-url="http://dasai.cnweike.cn/list.html">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">中国微课</div>
+                    <div class="url-des">汇集全国优秀微课作品，学习参考</div>
+                </li>
+
+                <li style="background: #51ccb1;" data-url="http://live.yanxiu.com/lv/page/programs/index">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">研直播</div>
+                    <div class="url-des">全国各地大型赛课、教育讲座直播+回看</div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://appti1qd2s44049.pc.xiaoe-tech.com/index">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">人教社公开课</div>
+                    <div class="url-des">人民教育出版社的直播和公开课平台，权威 </div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://h5.zxx.edu.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">智慧教育平台</div>
+                    <div class="url-des">国家中小学智慧教育平台（试运行） </div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="http://zs.greengarden.org.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">中少快乐阅读平台</div>
+                    <div class="url-des">中国少年儿童新闻出版总社阅读平台 </div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="http://anshan.61read.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">中少快乐阅读平台</div>
+                    <div class="url-des">中国少年儿童新闻出版总社阅读平台 </div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://kid.bjadks.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">乐于学少儿多媒体图书馆</div>
+                    <div class="url-des">启迪心智寓教于乐</div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="http://www.dqlib.com.cn:8011/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">乐于学少儿多媒体图书馆（德清图书馆镜像）</div>
+                    <div class="url-des">启迪心智寓教于乐</div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="http://leyuxue.whst.org:8033/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">乐于学少儿多媒体图书馆（武汉市少儿图书馆镜像）</div>
+                    <div class="url-des">启迪心智寓教于乐</div>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="xsky">学术科研</div>
+            </div>
+            <ul class="url">
+                <li style="background: #e6c53f;" data-url="https://www.cnki.net">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">中国知网 </div>
+                    <div class="url-des"> 提供中外文文献、学位论文、报纸、会议、年鉴、工具书等各类资源</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://www.wanfangdata.com.cn/index.html">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">万方 </div>
+                    <div class="url-des">中外学术论文、中外标准、中外专利、科技成果、政策法规等科技文献</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://webofknowledge.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">SCI、SSCI等 </div>
+                    <div class="url-des">这个是著名的Web of Science网站。是大型综合性、多学科、核心期刊引文索引数据库，包括三大引文数据库。</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://www.hzlib.net/szzysjk/364.htm">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">杭图知网 </div>
+                    <div class="url-des">借用杭州图书馆免费下载知网的文献 </div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://www.zjlib.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">浙江图书馆 </div>
+                    <div class="url-des">可以借用浙江图书馆免费下载知网的文献。支付宝搜索「浙江图书馆」，关注后即可免费注册</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://www.sxlib.com">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">浙绍兴图书馆 </div>
+                    <div class="url-des">支付宝搜索「绍兴图书馆」，关注后即可免费注册</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="http://www.gxlib.org.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">广西壮族自治区图书馆 </div>
+                    <div class="url-des">官网自行注册</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="http://www.gzlib.org">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">贵州数字图书馆 </div>
+                    <div class="url-des">官网自行注册</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="http://www.zslib.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">中山纪念图书馆 </div>
+                    <div class="url-des">官网自行注册</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="http://read.nlc.cn/user/index">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">中国国家数字图书馆 </div>
+                    <div class="url-des">先注册账号然后选择新东方多媒体学习库</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://opendata.pku.edu.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">北京大学数据库 </div>
+                    <div class="url-des">北京大学数据库是一个重要的微观数据来源，特别是含有CFPS数据库。部分数据需要申请。 </div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://xue.glgoo.org/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">谷歌学术 </div>
+                    <div class="url-des">谷歌学术是最常用的学术论文检索工具，它还能直接下载sci等论文</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="http://xueshu.baidu.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">百度学术 </div>
+                    <div class="url-des">百度学术是百度推出的学术搜索引擎，但更偏向国内文献。</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://sci-hub.ren/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">SCI-hub </div>
+                    <div class="url-des">sci-hub是著名的免费下载sci以及其他论文的网站</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="http://dir.scmor.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">全渠道搜索 </div>
+                    <div class="url-des">谷歌、谷歌学术、翻译，这个导航站都有</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://gfsoso.99lb.net/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">谷粉搜搜 </div>
+                    <div class="url-des">聚合谷歌学术、sci-hub、知网、专利数据库等学术</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://searx.be/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">searx </div>
+                    <div class="url-des">searx元搜索是尊重隐私的搜索工具，无跟踪，匿名</div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="http://career.lib.ustc.edu.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">中国科学技术大学</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://zyk.wap.bjadks.com/autologin/index?gid=3549">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">贵州中医药大学</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://zyk.bjadks.com/AuthApi/DissimilarLogin?gid=675">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">忻州师范学院</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://zyk.bjadks.com/AuthApi/DissimilarLogin?gid=1353">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">华南师范大学</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://zyk.bjadks.com/AuthApi/DissimilarLogin?gid=679">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">太原工业学院</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://zyk.bjadks.com/AuthApi/DissimilarLogin?gid=3164">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">同安区图书馆</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://zyk.bjadks.com/AuthApi/DissimilarLogin?gid=264">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">湖南工学院</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://zyk.bjadks.com/AuthApi/DissimilarLogin?gid=926">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">广西机电职业技术学院</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://www.lzhit.edu.cn/lib/info/1008/1598.htm">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">柳州工学院图书馆</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://lib.nuist.edu.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">南京信息工程大学图书馆</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="http://www.library.gxnu.edu.cn/2015/0629/c3977a94862/pagem.htm">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">广西师范大学</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="http://lib.jlufe.edu.cn/content.jsp?urltype=tree.TreeTempUrl&wbtreeid=1027">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">吉林财经大学图书馆</div>
+                    <div class="url-des"></div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="http://gongwenguan.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">公文馆</div>
+                    <div class="url-des">体制人的加油站</div>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="jxgl">教学管理</div>
+            </div>
+            <ul class="url">
+                <li style="background: #e6c53f;" data-url="https://care.seewo.com/app/activity/download">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">班级优化大师 </div>
+                    <div class="url-des">班级管理神器，实时给学生打分与评价</div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://www.yichafen.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">易查分 </div>
+                    <div class="url-des">给学生一对一发放成绩，保护学生隐私</div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://www.timebook.cc/new/index.html">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">七彩课堂</div>
+                    <div class="url-des">七彩课堂配套教学资源，直接下载，无需登录注册</div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="http://www.hitecloud.cn/web/default/home?selected=resource">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">鸿合云平台</div>
+                    <div class="url-des">七鸿合教学资源，可以先看，需注册登录，然后下载</div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="yswg">
+                    演示文稿 </div>
+            </div>
+            <ul class="url">
+                <li style="background: #6ac568;" data-url="https://enweb.seewo.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">希沃白板 </div>
+                    <div class="url-des">强大的课件演示软件，多端同步 </div>
+                </li>
+
+                <li style="background: #6ac568;" data-url="https://easinote.seewo.com/">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">希沃白板 </div>
+                    <div class="url-des">强大的课件演示软件，多端同步 </div>
+                </li>
+
+                <li style="background: #4cb2f1;" data-url="http://www.focusky.com.cn/download/">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">Focusky </div>
+                    <div class="url-des">可以制作炫酷动画效果的演示软件 </div>
+                </li>
+
+                <li style="background: #f0045e;" data-url="http://hippter.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">HiPPTER【推荐></div>
+                    <div class="url-des">推荐PPT设计相关网站，创意灵感、配色方案、免费图片、工具插件等</div>
+                </li>
+
+                <li style="background: #e16969;" data-url="https://www.pptsupermarket.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">ppt超级市场 </div>
+                    <div class="url-des">以前全免费的ppt下载网站 </div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://www.1ppt.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">第1PPT </div>
+                    <div class="url-des">ppt课件免费下载，无需登录注册 </div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="http://www.kjzhan.com/index.html">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">课件站 </div>
+                    <div class="url-des">界面虽旧，课件很多，全免费下载 </div>
+                </li>
+
+                <li style="background: #51ccb1;" data-url="https://www.ypppt.com/">
+                    <div class="tips"><img src="img/online.png">
+                    </div>
+                    <div class="url-title">优品PPT </div>
+                    <div class="url-des">一个有情怀的免费PPT模板下载网站 </div>
+                </li>
+
+                <li style="background: #22bd1d;" data-url="http://www.51pptmoban.com/">
+                    <div class="tips"><img src="img/online.png">
+                    </div>
+                    <div class="url-title">51PPT </div>
+                    <div class="url-des">免费的PPT模板及素材下载 </div>
+                </li>
+                <li style="background: #22bd1d;" data-url="https://www.dingdangsheji.com/">
+                    <div class="tips"><img src="img/online.png">
+                    </div>
+                    <div class="url-title">叮当PPT </div>
+                    <div class="url-des">又一个免费的PPT模板及素材下载 </div>
+                </li>
+
+                <li style="background: #e16969;" data-url="https://www.officeplus.cn/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">PPTPlus </div>
+                    <div class="url-des">微软官方的ppt模板站，免费下载模板 </div>
+                </li>
+
+                <li style="background: #d4ad42;" data-url="http://www.xszydq.com">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">学术资源大全 </div>
+                    <div class="url-des">科研PPT素材，免费下载模板 </div>
+                </li>
+
+                <li style="background: #0f9eb1;" data-url="http://yanshuo.io/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">PPT演说 </div>
+                    <div class="url-des">随时随地的在线展示文稿</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="lprj">录屏软件 </div>
+            </div>
+            <ul class="url">
+                <li style="background: #51c7db;" data-url="https://www.baidu.com/s?ie=utf-8&wd=oCam">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">oCam </div>
+                    <div class="url-des">小巧的录屏软件，只能录屏幕，不能录真人 </div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://www.ieway.cn/evcapture.html">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">EVCapture 录屏工具</div>
+                    <div class="url-des">软件小，免费使用，高清无水印</div>
+                </li>
+
+                <li style="background: #9aa39a;" data-url="https://obsproject.com/">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">obsproject </div>
+                    <div class="url-des">录屏、直播神器，可抠绿幕、真人出镜 </div>
+                </li>
+
+                <li style="background: #6ac568;" data-url="https://e.seewo.com/product/JJS">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">剪辑师</div>
+                    <div class="url-des">希沃出品的录屏软件，可以剪辑，做微课方便 </div>
+                </li>
+
+                <li style="background: #6ac568;" data-url="https://lusun.com/download">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">芦笋录屏 </div>
+                    <div class="url-des">极简录屏软件，云存放，圆形真人出镜，比较时尚 </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="swcz">思维创作</div>
+            </div>
+            <ul class="url">
+                <li style="background: #0f2b3b;" data-url="http://www.txttool.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">文本处理</div>
+                    <div class="url-des">文字也能变出花样来，很多对文字处理的小工具 </div>
+                </li>
+
+                <li style="background: #083be2;" data-url="https://www.135editor.com/beautify_editor.html">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">135editor编辑器</div>
+                    <div class="url-des">135微信排版编辑器</div>
+                </li>
+
+                <li style="background: #083be2;" data-url="https://xiumi.us/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">秀米编辑器</div>
+                    <div class="url-des">秀米微信排版编辑器 </div>
+                </li>
+
+                <li style="background: #083be2;" data-url="https://lab.lyric.im/wxformat/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">markdown编辑器</div>
+                    <div class="url-des">微信公众号格式化排版编辑器 </div>
+                </li>
+
+                <li style="background: #e895d2;" data-url="https://zhimap.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">ZhiMap </div>
+                    <div class="url-des">免费思维导图，比收费的还好用 </div>
+                </li>
+
+                <li style="background: #e6c53f;" data-url="https://www.processon.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">ProcessOn</div>
+                    <div class="url-des">免费在线流程图思维导图，功能较全 </div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://naotu.baidu.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">百度脑图</div>
+                    <div class="url-des">百度公司的在线版思维导图，界面清爽 </div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://www.liuchengtu.com/home/myfile">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">迅捷脑图</div>
+                    <div class="url-des">简单易用、功能强大，高效制作专业又美观的脑图，轻松还原逻辑与思考</div>
+                </li>
+
+                <li style="background: #63eed7;" data-url="https://mubu.com/home">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">幕布 </div>
+                    <div class="url-des">极简大纲笔记，一键生成思维导图 </div>
+                </li>
+
+                <li style="background: #63eed7;" data-url="http://www.mindline.cn/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">mindline思维导图</div>
+                    <div class="url-des">在线快速生成思维导图 </div>
+                </li>
+
+                <li style="background: #9aa39a;" data-url="https://meiriyiwen.com/">
+                    <div class="tips"><img src="img/online.png">
+                    </div>
+                    <div class="url-title">每日一文</div>
+                    <div class="url-des">3分钟看一篇文章，激发创作灵感。 </div>
+                </li>
+
+                <li style="background: #9aa39a;" data-url="https://www.fonts.net.cn/commercial-free/fonts-zh-1.html">
+                    <div class="tips"><img src="img/online.png">
+                    </div>
+                    <div class="url-title">字体天下</div>
+                    <div class="url-des">由字体天下整理的免费商用中英文字体，100多款直接下载 </div>
+                </li>
+
+                <li style="background: #9aa39a;" data-url="https://www.maoken.com/">
+                    <div class="tips"><img src="img/online.png">
+                    </div>
+                    <div class="url-title">猫啃网</div>
+                    <div class="url-des">提供最新最全且免费的，可商用，无版权问题的免费中文字体</div>
+                </li>
+
+                <li style="background: #9aa39a;"
+                    data-url="https://www.zitijia.com/t/%E5%85%8D%E8%B4%B9%E5%95%86%E7%94%A8">
+                    <div class="tips"><img src="img/online.png">
+                    </div>
+                    <div class="url-title">字体家</div>
+                    <div class="url-des">由字体家整理的免费商用中文字体，100多款直接下载</div>
+                </li>
+
+                <li style="background: #9aa39a;" data-url="https://izihun.com/shangyongziti/r2/">
+                    <div class="tips"><img src="img/online.png">
+                    </div>
+                    <div class="url-title">字魂</div>
+                    <div class="url-des">由字魂网整理的免费商用字体，支持预览，直接下载</div>
+                </li>
+
+                <li style="background: #33e008;" data-url="https://uiiiuiii.com/tool/typeface">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">字体下载</div>
+                    <div class="url-des">免费可商用字体下载</div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="txcl">图像处理</div>
+            </div>
+            <ul class="url">
+                <li style="background: #51c7db;" data-url="https://www.baidu.com/s?ie=UTF-8&wd=caesium">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">Caesium </div>
+                    <div class="url-des">一键批量压缩图片，释放电脑空间 </div>
+                </li>
+
+                <li style="background: #0c8668;" data-url="https://www.picdiet.com/zh-cn">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">Picdiet </div>
+                    <div class="url-des">能极速压缩80%的图片大小，而不损害其质量</div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://web.baimiaoapp.com/">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">图片提取文字</div>
+                    <div class="url-des">图片提取文字，图片转表格，PDF转文字，数学公式识别</div>
+                </li>
+
+                <li style="background: #e16969;" data-url="https://www.gaoding.com/design/collage?id=83883">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">稿定拼图 </div>
+                    <div class="url-des">电脑在线拼图，无需下载软件</div>
+                </li>
+
+                <li style="background: #4cb2f1;" data-url="https://www.gaituya.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">改图鸭 </div>
+                    <div class="url-des">图片压缩编辑改大小</div>
+
+                <li style="background: #51ccb1;" data-url="https://ps.gaoding.com/#/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">稿定PS </div>
+                    <div class="url-des">在线ps工具，无需下载也能ps图片</div>
+                </li>
+
+                <li style="background: #f0896d;" data-url="https://www.canva.cn/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">canva可画 </div>
+                    <div class="url-des">在线图片生成、海报制作，模板丰富</div>
+                </li>
+
+                <li style="background: #e895d2;" data-url="http://www.mohou.com/tools">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">魔猴3D </div>
+                    <div class="url-des">在线3D建模，创客教师必备</div>
+                </li>
+
+                </li>
+
+                <li style="background: #5269c1;" data-url="https://www.hituyu.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">图鱼 </div>
+                    <div class="url-des">专业做纹理背景，免费，用来做ppt背景很好 </div>
+                </li>
+
+                <li style="background: #3bb61c;" data-url="https://silhouetteac-cn.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">免费矢量剪影 </div>
+                    <div class="url-des">专业的剪影矢量素材网站，数量超过52000+，均可免费商用</div>
+                </li>
+
+                <li style="background: #3bb61c;" data-url="https://pixabay.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">Pixabay</div>
+                    <div class="url-des">全球最大的免费图片站，超50万张图，支持中文搜索</div>
+                </li>
+
+                <li style="background: #3bb61c;" data-url="https://www.sitapix.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">西田图像</div>
+                    <div class="url-des">200000+高质量免版权图片素材/设计师素材/摄影图片</div>
+                </li>
+
+                <li style="background: #3bb61c;" data-url="https://www.colorhub.me/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">colorhub</div>
+                    <div class="url-des">已收录90000+张高清图片，质量很高，而且每天都在不断更新</div>
+                </li>
+
+                <li style="background: #3bb61c;" data-url="https://www.foodiesfeed.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">FoodiesFeed</div>
+                    <div class="url-des">顾名思义，主打食品，吃货设计师的天堂</div>
+                </li>
+
+                <li style="background: #3bb61c;" data-url="https://www.hippopx.com/zh">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">Hippopx</div>
+                    <div class="url-des">收录超过20万张以上的免费CC0授权相片，支持中文检索</div>
+                </li>
+
+                <li style="background: #144406;" data-url="https://zh.clippingmagic.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">clippingmagic </div>
+                    <div class="url-des">智能抠图</div>
+                </li>
+
+                <li style="background: #3fe20d;" data-url="https://www.doupi.tech/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">豆皮图片下载器</div>
+                    <div class="url-des">批量下载原图，支持微博、豆瓣、花瓣、太平洋摄影部落等多个网站</div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="ypcl">音频处理 </div>
+            </div>
+            <ul class="url">
+                <li style="background: #4cb2f1;"
+                    data-url="https://azure.microsoft.com/zh-cn/services/cognitive-services/text-to-speech/#features">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">文本转语音</div>
+                    <div class="url-des">微软超强的文本转语音工具，接近真人 </div>
+                </li>
+
+                <li style="background: #4cb2f1;" data-url="https://zenvideo.qq.com/home">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">腾讯智影</div>
+                    <div class="url-des">AI自动识别音/视频字幕</div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://jianwai.youdao.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">网易见外</div>
+                    <div class="url-des">音频转文本、文档翻译、字幕生成</div>
+                </li>
+
+                <li style="background: #5269c1;" data-url="https://www.baidu.com/s?ie=utf-8&wd=adobe%20audition">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">Audition </div>
+                    <div class="url-des">Adobe公司强大的音频处理软件</div>
+                </li>
+
+                <li style="background: #e16969;" data-url="https://makenweb.com/#spleetergui">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">Spleeter </div>
+                    <div class="url-des">超强的人声和伴奏分离软件</div>
+                </li>
+
+                <li style="background: #1b0969;" data-url="https://vocalremover.org/ch/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">音乐去除人声 </div>
+                    <div class="url-des">在线人声消除和隔离</div>
+                </li>
+
+                <li style="background: #1b0969;" data-url="https://mp3cut.net/cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">在线音频剪辑 </div>
+                    <div class="url-des">可以上传300多种文件格式、添加淡出淡入、导出铃声等功能</div>
+                </li>
+
+                <li style="background: #5ee022;" data-url="https://taira-komori.jpn.org/freesoundcn.html">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">小森平音效</div>
+                    <div class="url-des">一个日本大神做的超级给力的免费音效网站，里面的声音涵盖方方面面</div>
+                </li>
+
+                <li style="background: #5ee022;" data-url="https://www.tosound.com/">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">淘声网 </div>
+                    <div class="url-des">强大的声音资源搜索引擎，聚合了国内外百万级音频数据 </div>
+                </li>
+
+                <li style="background: #5ee022;" data-url="https://www.ear0.com/">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">耳聆网ear0 </div>
+                    <div class="url-des">国人建立的非营利公众项目，拥有完善的CC协议机制和庞大的声音资源库</div>
+                </li>
+
+                <li style="background: #5ee022;" data-url="https://freemusicarchive.org/">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">Free Music Archive</div>
+                    <div class="url-des">免版权音乐收集，质量都不错很有感觉！</div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="spcl">视频处理</div>
+            </div>
+            <ul class="url">
+                <li style="background: #5269c1;" data-url="https://lv.ulikecam.com/">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">剪映</div>
+                    <div class="url-des">抖音推出的视频剪辑软件，素材多，全免费</div>
+                </li>
+
+                <li style="background: #4cb2f1;" data-url="http://bcut.drawyoo.com/">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">必剪</div>
+                    <div class="url-des">Bilibili推出的视频剪辑软件，素材多</div>
+                </li>
+
+                <li style="background: #5269c1;" data-url="https://ducut.baidu.com/">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">度咔</div>
+                    <div class="url-des">百度推出的视频剪辑软件，素材多，全免费</div>
+                </li>
+
+                <li style="background: #51ccb1;" data-url="https://lv.ulikecam.com/">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">shotcut </div>
+                    <div class="url-des">开源的视频剪辑软件，完全免费</div>
+                </li>
+
+                <li style="background: #5269c1;" data-url="https://www.heycan.com/material#all">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">黑罐头 </div>
+                    <div class="url-des">抖音推出的视频剪辑素材平台，素材丰富</div>
+                </li>
+
+                <li style="background: #5282c1;" data-url="https://www.baidu.com/s?ie=UTF-8&wd=Premiere">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">Premiere </div>
+                    <div class="url-des">Adobe公司的专业视频剪辑软件 </div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://www.videvo.net/">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">小丸工具箱 </div>
+                    <div class="url-des">B站定制版小丸工具箱，压缩视频神器</div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://dl.hdslb.com/video-press/BiliBiliEncoder.zip">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">Videvo</div>
+                    <div class="url-des">提供大量素材和动态图像可供选择，但部分有使用限制</div>
+                </li>
+
+                <li style="background: #aa105d;" data-url="https://tool.lu/videoparser/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">爱抖腾视频下载</div>
+                    <div class="url-des">抖音、B站、爱奇艺、芒果、秒拍、网易云音乐、微博视频、腾讯</div>
+                </li>
+
+                <li style="background: #aa105d;" data-url="https://video.ciding.cc/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">蜜蜂短视频解析 </div>
+                    <div class="url-des">蜜蜂在线短视频去水印解析</div>
+                </li>
+
+                <li style="background: #1b0969;" data-url="https://beecut.cn/online-video-editor">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">在线视频剪辑 </div>
+                    <div class="url-des">提供非常实用的视频基础编辑功能，比如截取、合并、变速、消音等</div>
+                </li>
+
+                <li style="background: #6d5db3;" data-url="https://xbeibeix.com/api/bilibili/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">Bilibili解析 </div>
+                    <div class="url-des">哔哩哔哩视频下载</div>
+                </li>
+
+                <li style="background: #6d5db3;" data-url="https://www.flvcd.com/url.php">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">硕鼠视频下载 </div>
+                    <div class="url-des">全网大部分视频都可以下载</div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="dhzz">动画制作</div>
+            </div>
+            <ul class="url">
+                <li style="background: #4cb2f1;" data-url="http://www.animiz.cn/download/">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">万彩动画大师</div>
+                    <div class="url-des">拖动鼠标就能制作卡通动画，入门简单</div>
+                </li>
+
+                <li style="background: #4cb2f1;" data-url="https://lottiefiles.com">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">Lottiefiles</div>
+                    <div class="url-des">免费搜索来自全球动画师创作的1000多个精美动画，下载格式丰富</div>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="aqrj">安全软件</div>
+            </div>
+            <ul class="url">
+                <li style="background: #f0896d;" data-url="https://www.huorong.cn/person5.html">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">火绒安全 </div>
+                    <div class="url-des">目前比较良心的杀毒软件，有效拦截弹窗 </div>
+
+                </li>
+
+                <li style="background: #f0896d;" data-url="https://pc.qq.com">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">腾讯软件 </div>
+                    <div class="url-des">腾讯软件库，下载软件无捆绑 </div>
+
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="dzts">电子图书</div>
+            </div>
+            <ul class="url">
+                <li style="background: #e895d2;" data-url="https://zh.u1lib.org/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">Zlibrary </div>
+                    <div class="url-des">全球最强大的电子图书站，微信中打不开 </div>
+                </li>
+
+                <li style="background: #e895d2;" data-url="hhttps://toepub.com/zh/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">Zlibrary </div>
+                    <div class="url-des">电子书格式在线转换</div>
+                </li>
+
+                <li style="background: #5269c1;" data-url="https://www.sxpdf.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">书行天下 </div>
+                    <div class="url-des">无需登录就能下载pdf书籍，比较良心 </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="sygj">实用工具</div>
+            </div>
+            <ul class="url">
+                <li style="background: #e16969;" data-url="https://axutongxue.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">阿虚同学储物间 </div>
+                    <div class="url-des">你想找的，这里也许有 </div>
+                </li>
+
+                <li style="background: #e16969;" data-url="https://www.datavrap.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">Datavrap </div>
+                    <div class="url-des">数据可视化工具，制作数据变动视频 </div>
+                </li>
+
+                <li style="background: #f0896d;" data-url="http://www.atoolbox.net/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">一个工具箱 </div>
+                    <div class="url-des">汇集了无数好用的在线工具，全免费 </div>
+                </li>
+
+                <li style="background: #51ccb1;" data-url="https://brie.fi/ng">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">视频连线 </div>
+                    <div class="url-des">在线视频聊天（会议），一键开启 </div>
+                </li>
+
+                <li style="background: #e895d2;" data-url="https://www.utovr.com/">
+                    <div class="tips"><img src="img/online.png"> </div>
+                    <div class="url-title">虚拟现实 </div>
+                    <div class="url-des">虚拟现实的环境，融入情境式教学 </div>
+                </li>
+
+                <li style="background: #083be2;" data-url="https://www.67tool.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">即时工具</div>
+                    <div class="url-des">致力打造即用即走型在线工具箱</div>
+                </li>
+
+                <li style="background: #0c8668;" data-url="https://tableconvert.com/zh-CN/excel-to-markdown">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">表格工具 </div>
+                    <div class="url-des">支持Excel、MD、JSON、CSV、HTML等格式的相互转换</div>
+                </li>
+
+                <li style="background: #633f1e;" data-url="https://www.ilovepdf.com/zh-cn">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">PDF处理 </div>
+                    <div class="url-des">在线PDF文件处理 </div>
+                </li>
+
+                <li style="background: #249c52;" data-url="https://bus.daibor.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">上班通勤计算 </div>
+                    <div class="url-des">公交线路辐射图，通勤时间计算</div>
+                </li>
+
+                <li style="background: #4f52e4;" data-url="https://jianli.baidu.com/template">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">简历模板 </div>
+                    <div class="url-des">简历模板，助你找到好工作</div>
+                </li>
+
+                <li style="background: #20d38e;" data-url="https://www.alltoall.net/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">All2All </div>
+                    <div class="url-des">全网覆盖类型最广的转换工具，重点免费无限制</div>
+                </li>
+
+                <li style="background: #6fca06;" data-url="https://www.wenshushu.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">文叔叔 </div>
+                    <div class="url-des">快速跟朋友分享文件，2步在线发送，下载文件不限速</div>
+                </li>
+
+                <li style="background: #6fca06;" data-url="https://cowtransfer.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">奶牛快传 </div>
+                    <div class="url-des">奶牛快传，支持2gb以内文件，方便的手机分享。</div>
+                </li>
+
+                <li style="background: #1776a1;" data-url="https://www.weiciyun.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">微词云 </div>
+                    <div class="url-des">强大的文字云艺术生成器，在线编辑，操作简单</div>
+                </li>
+
+                <li style="background: #1776a1;" data-url="https://www.nav3.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">发现导航 </div>
+                    <div class="url-des">强大的文字云艺术生成器，在线编辑，操作简单</div>
+                </li>
+
+                <li style="background: #d63807;" data-url="https://www.yikm.net/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">小霸王游戏机 </div>
+                    <div class="url-des">在线玩小霸王游戏，是童年的味道</div>
+                </li>
+
+                <li style="background: #d63807;" data-url="https://likexia.gitee.io/game/index.html#/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">Git游戏 </div>
+                    <div class="url-des">旨在发现GitHub上面好玩的 Html网页游戏</div>
+                </li>
+
+                <li style="background: #5a0b64;" data-url="https://www.mvcat.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">MVCAT </div>
+                    <div class="url-des">一个专业的电影推荐的网站，设计得非常独特</div>
+                </li>
+
+                <li style="background: #5a0b64;" data-url="https://magi.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">Magi </div>
+                    <div class="url-des">基于机器学习的信息抽取和检索系统，提供完整的知识体系</div>
+                </li>
+
+                <li style="background: #44ca06;" data-url="https://www.foodwake.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">唤醒食物 </div>
+                    <div class="url-des">一个让人佩服得五体投地得研究食物的网站， 各种营养素分析既全面又详细</div>
+                </li>
+
+                <li style="background: #44ca06;" data-url="http://www.bigpixel.cn/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">大像素星球 </div>
+                    <div class="url-des">用1950亿像素看上海，你见过吗？放大放大再放大，惊讶程度不断刷新</div>
+                </li>
+
+                <li style="background: #44ca06;" data-url="http://www.qijishow.com/down/index.html">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">奇迹秀工具箱</div>
+                    <div class="url-des">分享UI设计师必备设计工具及各类设计辅助神器</div>
+                </li>
+
+                <li style="background: #44ca06;" data-url="https://tools.miku.ac/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">Mikutook</div>
+                    <div class="url-des">一个轻量的工具集合</div>
+                </li>
+
+                <li style="background: #44ca06;" data-url="https://www.bmcx.com/">
+                    <div class="tips"><img src="img/online.png"></div>
+                    <div class="url-title">便民查询网</div>
+                    <div class="url-des">一个轻量的工具集合</div>
+                </li>
+
+        </div>
+
+        <div class="card">
+            <div class="title">
+                <div class="title-box" id="zjgj">装机工具</div>
+            </div>
+            <ul class="url">
+                <li style="background: #147979;" data-url="https://www.wepe.com.cn/download.html">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">wepe系统 </div>
+                    <div class="url-des">傻瓜式地快速安装的PE，小白也能安装系统</div>
+                </li>
+
+                <li style="background: #6ac568;" data-url="https://www.voidtools.com/zh-cn/">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">everything搜索 </div>
+                    <div class="url-des">基于名称快速定位文件和文件夹，秒出结果 </div>
+                </li>
+
+                <li style="background: #9aa39a;"
+                    data-url="https://www.baidu.com/s?ie=utf-8&wd=Rename%20Pro%20%E6%B1%89%E5%8C%96%E7%89%88">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">文件批量改名 </div>
+                    <div class="url-des">一键给目录下的文件改名，可自定义编号 </div>
+                </li>
+
+                <li style="background: #4cb2f1;"
+                    data-url="https://www.baidu.com/s?ie=UTF-8&wd=wps%E6%94%BF%E5%BA%9C%E7%89%88">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">wps政府版 </div>
+                    <div class="url-des">政府没有广告版的wps，很纯净 </div>
+                </li>
+
+                <li style="background: #51c7db;" data-url="https://otp.landian.vip/zh-cn/download.html">
+                    <div class="tips"><img src="img/down.png"> </div>
+                    <div class="url-title">Office最新版 </div>
+                    <div class="url-des">一键部署任何版本的Office套件 </div>
+                </li>
+
+                <li style="background: #18be5d;" data-url="https://www.adtchrome.com/">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">ADT广告拦截 </div>
+                    <div class="url-des">广告终结者是当下国内最受欢迎的浏览器扩展。</div>
+                </li>
+
+                <li style="background: #d30639;" data-url="https://adblockplus.org/">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">AdBlockPlus</div>
+                    <div class="url-des">世界排名第一的免费广告拦截程序</div>
+                </li>
+
+                <li style="background: #c1d417c2;" data-url="https://wwx.lanzoux.com/iBu7Fksqpmb">
+                    <div class="tips"><img src="img/down.png"></div>
+                    <div class="url-title">HEU_KMS_Activator</div>
+                    <div class="url-des">知名的windows激活工具</div>
+                </li>
+            </ul>
+
+            <div class="card">
+                <div class="title">
+                    <div class="title-box" id="grsc">个人收藏</div>
+                </div>
+                <ul class="url">
+                    <li style="background: #163ec2;" data-url="https://tophub.today/">
+                        <div class="tips"><img src="img/online.png"></div>
+                        <div class="url-title">今日热榜 </div>
+                        <div class="url-des">汇总了各大媒体平台的热榜文章，页面简洁干净</div>
+                    </li>
+
+                    <li style="background: #163ec2;" data-url="https://xudadi.lanzouy.com/u/xudadi">
+                        <div class="tips"><img src="img/online.png"></div>
+                        <div class="url-title">蓝奏网盘 </div>
+                        <div class="url-des">常用软件下载</div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="footer">
+
+                <div class="line">
+                    已经到底啦!
+                    <div class="want-add">
+                        <a data-url="https://docs.qq.com/form/page/DWUdnaEd4VnFxZ2FW">我要提交网址</a>
+                    </div>
+                </div>
+                <div class="daohang" data-url="https://mp.weixin.qq.com/s/MElAeRuRTmBQv2lbEbyURA">
+                    <img src="https://hao.xudadi.com/mobile/img/qrcode.jpg" alt="avatar" />
+                    <div class="name-box"><a class="name">xudadi.com</a>
+						<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <img class="gotop" id="gotoTop" src="https://hao.xudadi.com/mobile/img/gotop.png" alt="返回顶部">
+        <script>
+            function gotoTop(minHeight) {
+
+            // 定义点击返回顶部图标后向上滚动的动画
+            $("#gotoTop").click(
+                function () {
+                    $('html,body').animate({ scrollTop: '0px' }, 'slow');
+                })
+
+            // 获取页面的最小高度，无传入值则默认为600像素
+            minHeight ? minHeight = minHeight : minHeight = 200;
+
+            // 为窗口的scroll事件绑定处理函数
+            $(window).scroll(function () {
+
+                // 获取窗口的滚动条的垂直滚动距离
+                var s = $(window).scrollTop();
+
+                // 当窗口的滚动条的垂直距离大于页面的最小高度时，让返回顶部图标渐现，否则渐隐
+                if (s > minHeight) {
+                    $("#gotoTop").fadeIn(500);
+                } else {
+                    $("#gotoTop").fadeOut(500);
+                };
+            });
+        };
+        gotoTop();
+        </script>
+</body>
+<script>
+    $(function () {
+        $("[data-url]").click(function () {
+            var url = $(this).attr("data-url");
+            window.open(url);
+        });
+    });
+</script>
+<div style="display:none">
+    <!--网站统计-->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?0082263a8b59a88fb0ff3e64785f2925";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript" src="https://s23.cnzz.com/z_stat.php?id=1252889580&web_id=1252889580"></script>
+</div>
+
+<div align="center">
+    <p><a href="https://hao.xudadi.com/more.html">电脑版</a>丨<a href="https://hao.xudadi.com/mobile/index.html">手机版</a>
+    </p>
+
+    <p>Copyright &copy; 2008-<script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script> Xudadi All Rights Reserved
+    </p>
+</div>
+
+</html>
